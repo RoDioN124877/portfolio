@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,19 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-   <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="page">
     <div class="progress-ladder">
         <div class="ladder-track"></div>
         <div class="ladder-character" id="ladderChar">
-            <img
-                id="charImg"
-                src="img/ladder/character.png"
-                alt="Character"
-                onerror="this.src='https://cdn-icons-png.flaticon.com/512/4712/4712035.png'"
-            />
+            <img id="charImg" src="img/ladder/character.png" alt="Character"
+                onerror="this.src='https://cdn-icons-png.flaticon.com/512/4712/4712035.png'" />
         </div>
         <ul class="ladder-steps">
             <li data-target="hero" class="active" data-label="Начало"></li>
@@ -32,7 +29,7 @@
         </ul>
     </div>
 
-    <header class="site-header" role="banner">
+    <header class="site-header" role="banner" id="siteHeader">
         <div class="container header-inner">
             <a class="brand" href="#hero">Rodion Ch</a>
 
@@ -45,28 +42,20 @@
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
-  <div class="lang-switcher">
-                    <button id="langToggle" class="lang-btn" aria-label="Переключить язык">
-                        <span class="lang-text">EN</span>
-                        <span class="lang-flag">🌐</span>
-                    </button>
-                </div>
-            <div class="header-actions">
-                <a
-                    class="btn-cv"
-                    href="https://drive.google.com/file/d/1cjM5MYayPe9xfWami4Rtf94nVtrFHEG2/view"
-                    target="_blank"
-                    >Резюме (PDF)</a
-                >
-              
+
+            <div class="lang-switcher">
+                <button id="langToggle" class="lang-btn" aria-label="Переключить язык">
+                    <span class="lang-text">EN</span>
+                    <span class="lang-flag">🌐</span>
+                </button>
             </div>
 
-            <button
-                class="burger"
-                id="burgerBtn"
-                aria-label="Меню"
-                aria-expanded="false"
-            >
+            <div class="header-actions">
+                <a class="btn-cv" href="https://drive.google.com/file/d/1cjM5MYayPe9xfWami4Rtf94nVtrFHEG2/view"
+                    target="_blank">Резюме (PDF)</a>
+            </div>
+
+            <button class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -80,17 +69,10 @@
         <a href="#skills">Навыки</a>
         <a href="#contacts">Контакты</a>
         <br />
-        <a
-            class="btn-cv"
-            href="https://drive.google.com/file/d/1cjM5MYayPe9xfWami4Rtf94nVtrFHEG2/view"
-            target="_blank"
-            style="text-align: center; color: #000"
-            >Скачать Резюме</a
-        >
-        <button id="langToggleMobile" class="lang-btn-mobile">
-            <span class="lang-flag">🌐</span>
-            <span class="lang-text-mobile">English</span>
-        </button>
+        <a class="btn-cv" href="https://drive.google.com/file/d/1cjM5MYayPe9xfWami4Rtf94nVtrFHEG2/view" target="_blank"
+            style="text-align:center;color:#000">Скачать Резюме</a>
+        <button id="langToggleMobile" class="lang-btn-mobile"><span class="lang-flag">🌐</span><span
+                class="lang-text-mobile">English</span></button>
     </nav>
 
     <main>
@@ -108,18 +90,9 @@
                     </div>
 
                     <div class="contact-row">
-                        <a href="mailto:rodion.ch06@gmail.com" class="contact-pill"
-                            >rodion.ch06@gmail.com</a
-                        >
-                        <a href="tel:+77052940884" class="contact-pill"
-                            >+7 705 294 0884</a
-                        >
-                        <a
-                            href="https://github.com/RoDioN124877"
-                            target="_blank"
-                            class="contact-pill"
-                            >GitHub</a
-                        >
+                        <a href="mailto:rodion.ch06@gmail.com" class="contact-pill">rodion.ch06@gmail.com</a>
+                        <a href="tel:+77052940884" class="contact-pill">+7 705 294 0884</a>
+                        <a href="https://github.com/RoDioN124877" target="_blank" class="contact-pill">GitHub</a>
                     </div>
 
                     <div class="meta">
@@ -129,217 +102,122 @@
                     </div>
                 </div>
 
-                <div class="hero-right reveal" style="transition-delay: 0.2s">
-                    <img
-                        src="img/about/3123313223.gif"
-                        alt="Rodion Avatar"
-                        class="hero-img"
-                    />
+                <div class="hero-right reveal" style="transition-delay:0.2s">
+                    <img src="img/about/3123313223.gif" alt="Rodion Avatar" class="hero-img" />
                 </div>
             </div>
         </section>
 
         <section id="about" class="section container section-track reveal">
             <h2 class="section-title">О себе</h2>
-            <p class="lead">
-                Я фронтенд-разработчик, но могу работать и в бэкенде. Меня всегда
-                тянуло к разработке, и с 13 лет я увлекался написанием простых 2D-игр,
-                разработкой на Arduino и т.д. Я участвовал в конкурсах по этим
-                направлениям и даже побеждал в некоторых из них.
-                <br />
-                <br />
-                Когда я решил изучить что-то углубленно, я долго не мог решить, что
-                мне ближе — разработка или дизайн, и нашёл компромисс в виде
-                фронтенд-разработки.
-                <br />
-                <br />
-                С тех пор я с отличием окончил годичный курс IT STEP ACADEMY. Хочу
-                работать фрилансером, делать проекты для родных и друзей, а теперь ищу
-                работу, где смогу развиваться, приносить пользу и совершенствовать
-                свои навыки.
-                <br />
-                <br />
-                Чем я могу быть вам полезен?: <br />
-                • Фронтенд-разработка с использованием Next.js и React <br />
-                • Бэкенд-разработка с использованием NestJS <br />
-                • Проектирование и архитектура масштабируемых высоконагруженных систем
-                <br />
-                • Разработка инновационных решений <br />
-                • У меня хорошее чувство юмора, и я легко общаюсь с людьми. <br />
+            <p class="lead" id="aboutLead">
+                <!-- content populated from translations.js -->
             </p>
         </section>
 
         <section id="experience" class="section container section-track reveal">
             <h2 class="section-title">Опыт работы</h2>
             <div class="timeline">
-                <article class="timeline-item">
+
+                <article class="timeline-item" data-exp="qazirgi">
                     <div class="ti-left">
-                        <h3>LST</h3>
-                        <time>Окт 2025 — Ноя 2025</time>
-                        <p class="role">Frontend Dev</p>
+                        <h3>Qazirgi Management</h3>
+                        <time>Дек 2025 — настоящее время</time>
+                        <p class="role">Frontend Developer</p>
                     </div>
                     <div class="ti-right">
                         <ul>
-                            <li>
-                                Разработал React-приложение с нуля: спроектировал компонентную
-                                архитектуру, структуру проекта и UI-логику.
+                            <li><strong>Модуль 360°:</strong> разработал масштабируемый viewer панорам с управлением
+                                yaw/pitch и интеграцией OrbitControls.</li>
+                            <li>Настроил ограничения камеры и логику первого вида, устранил конфликты управления
+                                состоянием.</li>
+                            <li>Оптимизировал жизненный цикл WebGL-сцены.</li>
+                            <li><strong>Модуль OS:</strong> спроектировал клиентскую архитектуру интерфейса системы.
                             </li>
-                            <li>
-                                Использовал TypeScript для строгой типизации, повышения
-                                стабильности и удобства сопровождения кода.
-                            </li>
-                            <li>
-                                Реализовал интерактивную карусель и мощный поисковой компонент
-                                с debounce/throttle для оптимизации запросов.
-                            </li>
-                            <li>
-                                Внедрил SEO-улучшения: оптимизировал DOM-структуру, метатеги,
-                                микроразметку, что улучшило индексируемость.
-                            </li>
-                            <li>
-                                Создал простую JSON-базу данных и полностью реализовал логику
-                                взаимодействия с ней.
-                            </li>
-                            <li>
-                                Разработал адаптивный интерфейс для всех основных устройств.
-                            </li>
-                            <li>
-                                • Выполнил весь проект самостоятельно: дизайн, архитектура,
-                                логика, интеграции и финальный релиз.
-                            </li>
+                            <li>Реализовал управление экранами, состояниями, навигацией и WebSocket-интеграцию.</li>
+                            <li>Настроил систему доступов и админ-режимы.</li>
+                            <li>Обеспечил стабильную работу в реальном времени и модульность для масштабирования.</li>
                         </ul>
                     </div>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" data-exp="lst">
                     <div class="ti-left">
-                        <h3>Стартап (Вендинг)</h3>
-                        <time>Июн 2025 — Авг 2025</time>
+                        <h3>LST</h3><time>Окт 2025 — Ноя 2025</time>
                         <p class="role">Frontend Dev</p>
                     </div>
                     <div class="ti-right">
                         <ul>
-                            <li>
-                                Работал над бизнес-стороной продукта: админ-панелью,
-                                внутренней логикой, управлением аппаратами.
-                            </li>
-                            <li>
-                                Использовал TypeScript и React, подключал API для получения и
-                                обработки данных.
-                            </li>
-                            <li>
-                                Участвовал в улучшении общей архитектуры проекта вместе с
-                                командой.
-                            </li>
-                            <li>
-                                Создавал интерфейсы для управления товарами, статистикой,
-                                устройствами, инвентаризацией.
-                            </li>
-                            <li>
-                                Реализовал сложную бизнес-логику (валидации, расчёты,
-                                синхронизации данных).
-                            </li>
-                            <li>
-                                Интерфейс пользовательской оплаты не разрабатывал, но был
-                                ответственен за всю функциональность админки.
-                            </li>
-                            <li>
-                                Работал по поставленным задачам, активно участвовал в
-                                технических обсуждениях и принятии решений.
-                            </li>
+                            <li>Разработал React-приложение с нуля: спроектировал компонентную архитектуру, структуру
+                                проекта и UI-логику.</li>
+                            <li>Использовал TypeScript для строгой типизации, повышения стабильности и удобства
+                                сопровождения кода.</li>
+                            <li>Реализовал интерактивную карусель и поисковой компонент с debounce/throttle.</li>
+                            <li>Внедрил SEO-улучшения и адаптивный интерфейс.</li>
                         </ul>
                     </div>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" data-exp="startup">
                     <div class="ti-left">
-                        <h3>Life trend</h3>
-                        <time>Авг 2025</time>
+                        <h3>Стартап (Вендинг)</h3><time>Июн 2025 — Авг 2025</time>
+                        <p class="role">Frontend Dev</p>
+                    </div>
+                    <div class="ti-right">
+                        <ul>
+                            <li>Работал над админ-панелью, внутренней логикой и управлением аппаратами.</li>
+                            <li>Интегрировал API, реализовывал бизнес-логику и синхронизацию данных.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-exp="lifetrend">
+                    <div class="ti-left">
+                        <h3>Life trend</h3><time>Авг 2025</time>
                     </div>
                     <div class="ti-right">
                         <ul>
                             <li>Разработал адаптивный лендинг с нуля по макету Figma.</li>
-                            <li>
-                                Использовал BEM, SCSS-модули и гибкую сетку для корректного
-                                отображения на 5+ типах устройств.
-                            </li>
-                            <li>
-                                Реализовал анимации интерфейса, улучшив визуальное восприятие
-                                и вовлечённость.
-                            </li>
-                            <li>
-                                Проект выполнял самостоятельно: от структуры до финальной
-                                оптимизации.
-                            </li>
+                            <li>Использовал BEM, SCSS-модули и гибкую сетку.</li>
                         </ul>
                     </div>
                 </article>
 
-                <article class="timeline-item">
+                <article class="timeline-item" data-exp="daft">
                     <div class="ti-left">
-                        <h3>DaftParty</h3>
-                        <time>Фев 2024 — Апр 2024</time>
+                        <h3>DaftParty</h3><time>Фев 2024 — Апр 2024</time>
                     </div>
                     <div class="ti-right">
                         <ul>
-                            <li>
-                                Мигрировал проект с ванильного HTML5 на Vue 3, переписал более
-                                12 компонентов на Composition API.
-                            </li>
-                            <li>
-                                Оптимизировал сборку, уменьшил вес бандла и ускорил загрузку
-                                приложения.
-                            </li>
+                            <li>Мигрировал проект с ванильного HTML5 на Vue 3, переписал 12+ компонентов.</li>
+                            <li>Оптимизировал сборку и уменьшил вес бандла.</li>
                         </ul>
                     </div>
                 </article>
 
-                <article class=" timeline-item ">
-
+                <article class="timeline-item" data-exp="verotour">
                     <div class="ti-left">
-                        <h3>Verotour</h3>
-                        <time>Ноя 2023 — Янв 2024</time>
+                        <h3>Verotour</h3><time>Ноя 2023 — Янв 2024</time>
                     </div>
                     <div class="ti-right">
                         <ul>
-                            <li>
-                                Полностью разработал многостраничный сайт турагентства:
-                                дизайн, вёрстка, структура, UI-логика.
-                            </li>
-                            <li>
-                                Реализовал интеграцию внешних API для поиска туров,
-                                авиабилетов и спец-предложений.
-                            </li>
-                            <li>
-                                Создал несколько разделов: страны, акции, туры, покупка
-                                билетов и др.
-                            </li>
-                            <li>
-                                Рабочий процесс включал самостоятельный дизайн и реализацию с
-                                нуля — опыт, который сильно прокачал навыки.
-                            </li>
+                            <li>Полностью разработал многостраничный сайт турагентства: дизайн, вёрстка, структура.</li>
+                            <li>Интегрировал внешние API для поиска туров и билетов.</li>
                         </ul>
                     </div>
                 </article>
+
             </div>
         </section>
-
         <section id="works" class="section container section-track reveal">
             <h2 class="section-title">Проекты</h2>
             <p class="lead">Ниже — подборка сайтов и проектов.</p>
 
             <div class="projects-grid">
-                <a
-                    class="project-card spotlight-card"
-                    href="https://verotour.kz/"
-                    target="_blank"
-                >
+                <a class="project-card spotlight-card" href="https://verotour.kz/" target="_blank">
                     <div class="spotlight-overlay"></div>
-                    <img
-                        src="img/works/vero.png"
-                        alt="VeroTour"
-                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=VeroTour'"
-                    />
+                    <img src="img/works/vero.png" alt="VeroTour"
+                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=VeroTour'" />
                     <div class="pc-body">
                         <h4>VeroTour</h4>
                         <p>Travel agency — сайт с нуля.</p>
@@ -350,11 +228,8 @@
                 <div class="project-card spotlight-card">
                     <div class="spotlight-overlay"></div>
 
-                    <img
-                        src="img/works/Snxrs.png"
-                        alt="Snxrs"
-                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=Snxrs'"
-                    />
+                    <img src="img/works/Snxrs.png" alt="Snxrs"
+                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=Snxrs'" />
                     <div class="pc-body spotlight-card">
                         <div class="spotlight-overlay"></div>
 
@@ -366,18 +241,11 @@
                     </div>
                 </div>
 
-                <a
-                    class="project-card spotlight-card"
-                    href="https://www.daftparty.kz/"
-                    target="_blank"
-                >
+                <a class="project-card spotlight-card" href="https://www.daftparty.kz/" target="_blank">
                     <div class="spotlight-overlay"></div>
 
-                    <img
-                        src="img/works/daft.png"
-                        alt="Daft"
-                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=Daft'"
-                    />
+                    <img src="img/works/daft.png" alt="Daft"
+                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=Daft'" />
                     <div class="pc-body spotlight-card">
                         <div class="spotlight-overlay"></div>
 
@@ -387,18 +255,11 @@
                     </div>
                 </a>
 
-                <a
-                    class="project-card spotlight-card"
-                    href="https://porogiats.kz/"
-                    target="_blank"
-                >
+                <a class="project-card spotlight-card" href="https://porogiats.kz/" target="_blank">
                     <div class="spotlight-overlay"></div>
 
-                    <img
-                        src="img/works/lst.png"
-                        alt="LST"
-                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=LST'"
-                    />
+                    <img src="img/works/lst.png" alt="LST"
+                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=LST'" />
                     <div class="pc-body">
                         <h4>LST тюнинг</h4>
                         <p>Business-card сайт.</p>
@@ -406,18 +267,11 @@
                     </div>
                 </a>
 
-                <a
-                    class="project-card spotlight-card"
-                    href="#"
-                    onclick="return false;"
-                >
+                <a class="project-card spotlight-card" href="#" onclick="return false;">
                     <div class="spotlight-overlay"></div>
 
-                    <img
-                        src="img/works/box.png"
-                        alt="Box Mashin"
-                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=BoxMashin'"
-                    />
+                    <img src="img/works/box.png" alt="Box Mashin"
+                        onerror="this.src='https://via.placeholder.com/400x250/111/00f0ef?text=BoxMashin'" />
                     <div class="pc-body">
                         <h4>Box Mashin</h4>
                         <p>Landing page.</p>
@@ -433,29 +287,25 @@
                 <div class="skill-block">
                     <h5>Технологии</h5>
                     <div class="skill-tags">
-                        <span>HTML5</span><span>CSS3</span><span>SASS</span><span>JS</span
-                        ><span>TS</span>
+                        <span>HTML5</span><span>CSS3</span><span>SASS</span><span>JS</span><span>TS</span>
                     </div>
                 </div>
                 <div class="skill-block">
                     <h5>Фреймворки</h5>
                     <div class="skill-tags">
-                        <span>React</span><span>Vue 3</span><span>Next.js</span
-                        ><span>React Native</span>
+                        <span>React</span><span>Vue 3</span><span>Next.js</span><span>React Native</span>
                     </div>
                 </div>
                 <div class="skill-block">
                     <h5>Инструменты</h5>
                     <div class="skill-tags">
-                        <span>Figma</span><span>Git</span><span>Webpack</span
-                        ><span>Vite</span>
+                        <span>Figma</span><span>Git</span><span>Webpack</span><span>Vite</span>
                     </div>
                 </div>
                 <div class="skill-block">
                     <h5>Soft skills</h5>
                     <div class="skill-tags">
-                        <span>Time Management</span><span>Creativity</span
-                        ><span>Adaptability</span>
+                        <span>Time Management</span><span>Creativity</span><span>Adaptability</span>
                     </div>
                 </div>
             </div>
@@ -477,26 +327,25 @@
 
         <section id="contacts" class="section container section-track reveal">
             <h2 class="section-title">Контакты</h2>
-            <div
-                style="
+            <div style="
                     background: rgba(255, 255, 255, 0.02);
                     padding: 30px;
                     border-radius: 12px;
                     border: 1px solid rgba(255, 255, 255, 0.03);
-                "
-            >
+                ">
                 <p>
                     <strong>Email:</strong>
-                    <a href="mailto:rodion.ch06@gmail.com" style="color: var(--accent)"
-                        >rodion.ch06@gmail.com</a
-                    >
+                    <a href="mailto:rodion.ch06@gmail.com" style="color: var(--accent)">rodion.ch06@gmail.com</a>
                 </p>
                 <p>
                     <strong>Phone:</strong>
-                    <a href="tel:+77052940884" style="color: var(--accent)"
-                        >+7 705 294 0884</a
-                    >
+                    <a href="tel:+77052940884" style="color: var(--accent)">+7 705 294 0884</a>
                 </p>
+
+                <strong>Telegram:</strong>
+
+                <a href="https://t.me/rodion_dev" style="color: var(--accent)" target="_blank">@rodion_dev</a>
+
                 <p style="margin-top: 20px; color: var(--muted)">
                     Цель: Стать частью команды профессионалов и развивать навыки UI.
                 </p>
@@ -509,11 +358,9 @@
             <div>© <span id="year"></span> Чубаров Родион</div>
             <div class="socials">
                 <a href="https://github.com/RoDioN124877" target="_blank">GitHub</a>
-                <a href="https://www.instagram.com/rodion_ch/" target="_blank"
-                    >Instagram</a
-                >
-                <a href="https://t.me/prvboiwww" target="_blank">Telegram</a>
-                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/rodion_ch/" target="_blank">Instagram</a>
+                <a href="https://t.me/rodion_dev" target="_blank">Telegram</a>
+                <a href="https://www.linkedin.com/in/rodion-chubarov-b601a7295/" target="_blank">LinkedIn</a>
             </div>
         </div>
     </footer>
@@ -521,4 +368,5 @@
     <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
