@@ -9,51 +9,68 @@ const translations = {
     "nav.downloadResume": "Скачать Резюме",
 
     "hero.title": "Чубаров Родион",
-    "hero.subtitle": "Frontend Developer",
-    "hero.tagline1": "Соединяю код с творчеством.",
-    "hero.tagline2": "Создаю чистый и сбалансированный UI.",
+    "hero.subtitle": "Fullstack Developer",
+    "hero.tagline1": "Веду фичи от архитектуры до production.",
+    "hero.tagline2": "React / TypeScript / Node.js / NestJS.",
     "hero.tagline3": "Люблю музыку и дисциплину спорта.",
     "hero.location": "Астана, Казахстан",
     "hero.english": "English B1",
     "hero.birthdate": "12.12.2006",
 
     "about.title": "О себе",
-    "about.text": ` Я фронтенд-разработчик, но могу работать и в бэкенде. Меня всегда
-                тянуло к разработке, и с 13 лет я увлекался написанием простых 2D-игр,
-                разработкой на Arduino и т.д. Я участвовал в конкурсах по этим
-                направлениям и даже побеждал в некоторых из них.
+    "about.text": `<strong>Fullstack-разработчик:</strong> React / TypeScript на фронте,
+                Node.js / NestJS на бэке. Беру фичу на этапе идеи и довожу до production:
+                архитектура, дизайн, код, багфиксы, релиз.
                 <br />
                 <br />
-                Когда я решил изучить что-то углубленно, я долго не мог решить, что
-                мне ближе — разработка или дизайн, и нашёл компромисс в виде
-                фронтенд-разработки.
+                Цифры и факты вместо слов: <br />
+                • Ускорил загрузку страницы <strong>с ~15 до ~2 секунд (в ~7 раз)</strong>,
+                перестроив логику получения данных. <br />
+                • В одиночку провёл эпик с платёжной интеграцией (SIGX) от проектирования
+                до production. <br />
+                • Чинил баги, которые воспроизводились только на одной платформе: потеря
+                сессии на iOS — локализовал через логирование и решил пробросом сессии
+                через backend. <br />
+                • Разработал 360°-viewer на WebGL / three.js и киоск-приложение на Kotlin
+                с авторизацией по Face ID. <br />
+                <br />
+                <strong>Backend:</strong> транзакции и фоновые задачи на Redis / BullMQ /
+                cron, SQL, real-time на WebSocket, решение race conditions при
+                конкурентном доступе.
                 <br />
                 <br />
-                Сегодня фокусируюсь на построении масштабируемых клиентских приложений,
-                продуманной архитектуре и чистом UI. Уверенно работаю как в frontend,
-                так и во взаимодействии с backend.
+                <strong>Frontend:</strong> React, Next.js, Zustand, сложный интерактив
+                вплоть до WebGL. Могу сам отрисовать макеты в Figma и собрать
+                дизайн-систему — когда-то выбирал между дизайном и разработкой, в итоге
+                делаю и то, и другое.
                 <br />
                 <br />
-                Чем я могу быть вам полезен?: <br />
-                • Фронтенд-разработка с использованием Next.js и React <br />
-                • Бэкенд-разработка с использованием NestJS <br />
-                • Проектирование и архитектура масштабируемых высоконагруженных систем
-                <br />
-                • Разработка инновационных решений <br />
-                • У меня хорошее чувство юмора, и я легко общаюсь с людьми. <br />`,
+                В коде с 13 лет: начинал с 2D-игр и Arduino, участвовал в конкурсах и
+                побеждал. Легко общаюсь, быстро включаюсь в продукт и не боюсь чужого
+                legacy.`,
 
     "experience.title": "Опыт работы",
     "experience.qazirgi.period": "Дек 2025 — настоящее время",
-    "experience.qazirgi.role": "Frontend Developer",
+    "experience.qazirgi.role": "Frontend Developer (React + TypeScript)",
     "experience.qazirgi.items": [
-      "Разработал масштабируемый 360° viewer с управлением камерой (yaw/pitch) и интеграцией OrbitControls.",
-      "Настроил ограничения движения камеры и логику первого вида, устранил конфликты управления состоянием.",
-      "Оптимизировал жизненный цикл WebGL-сцены и обеспечил стабильную работу.",
-      "Спроектировал клиентскую архитектуру OS-интерфейса.",
-      "Реализовал управление экранами, состояниями и навигацией.",
-      "Интегрировал WebSocket-протокол для real-time взаимодействия.",
-      "Внедрил систему доступов и админ-режимы.",
-      "Обеспечил модульность и масштабируемость клиентского решения.",
+      "Рефакторил legacy-фронтенд: выявлял и устранял баги, повышал стабильность и поддерживаемость кода.",
+      "Разработал модуль просмотра 360°-панорам на WebGL / three.js: управление камерой (yaw/pitch), кастомная логика взаимодействия и ограничения движения.",
+      "Оптимизировал жизненный цикл WebGL-сцены, повысив стабильность рендеринга.",
+      "Спроектировал клиентскую архитектуру системы учёта (OS-модуль): экраны, навигация, управление состоянием на Zustand.",
+      "Интегрировал WebSocket для работы в реальном времени, реализовал систему ролей и доступов, включая админ-режим.",
+      "Разработал лендинг-каталог для продажи аккумуляторов: фильтрация, форма заявок, адаптация под мобильные устройства.",
+      "Ускорил загрузку страницы с ~15 до ~2 секунд, перестроив логику получения данных на высокоуровневый polling.",
+      "Разработал киоск-приложение на Kotlin для авторизации гостей по Face ID.",
+    ],
+    "experience.saqr.period": "Май 2026 — Июль 2026",
+    "experience.saqr.role": "Software Engineer (Fullstack)",
+    "experience.saqr.items": [
+      "Вёл эпик с нуля до production: спроектировал и реализовал функциональность целиком (frontend + backend), провёл через множество итераций багфиксов.",
+      "Интегрировал возврат по BACKURL через SIGX — интеграция с приложением eGov.",
+      "Диагностировал и устранил критический баг на iOS: локализовал через логирование и системный troubleshooting, восстановил работу на всех платформах.",
+      "Проектировал транзакции и фоновые задачи на Redis, BullMQ и cron; решал race conditions при конкурентном доступе.",
+      "Провёл редизайн интерфейса и принимал UI/UX-решения, улучшившие ключевые пользовательские сценарии.",
+      "Стек: TypeScript, NestJS, Node.js, SQL, Redis, BullMQ, React.",
     ],
     "experience.lst.period": "Окт 2025 — Ноя 2025",
     "experience.lst.role": "Frontend Dev",
@@ -68,15 +85,10 @@ const translations = {
     ],
 
     "experience.startup.period": "Июн 2025 — Авг 2025",
-    "experience.startup.role": "Frontend Dev",
+    "experience.startup.role": "Frontend Dev (React)",
     "experience.startup.items": [
-      "Работал над бизнес-стороной продукта: админ-панелью, внутренней логикой, управлением аппаратами.",
-      "Использовал TypeScript и React, подключал API для получения и обработки данных.",
-      "Участвовал в улучшении общей архитектуры проекта вместе с командой.",
-      "Создавал интерфейсы для управления товарами, статистикой, устройствами, инвентаризацией.",
-      "Реализовал сложную бизнес-логику (валидации, расчёты, синхронизации данных).",
-      "Интерфейс пользовательской оплаты не разрабатывал, но был ответственен за всю функциональность админки.",
-      "Работал по поставленным задачам, активно участвовал в технических обсуждениях и принятии решений.",
+      "Разработал frontend вендингового аппарата: полный сценарий «выбор товара — оплата — подтверждение».",
+      "Интегрировал взаимодействие с backend и базой данных, реализовал админ-панель и стабильную работу интерфейса в реальном времени.",
     ],
 
     "experience.lifetrend.period": "Авг 2025",
@@ -89,8 +101,9 @@ const translations = {
 
     "experience.daft.period": "Фев 2024 — Апр 2024",
     "experience.daft.items": [
-      "Мигрировал проект с ванильного HTML5 на Vue 3, переписал более 12 компонентов на Composition API.",
-      "Оптимизировал сборку, уменьшил вес бандла и ускорил загрузку приложения.",
+      "С нуля спроектировал визуальный стиль и UI/UX: макеты в Figma, дизайн-система (кнопки, формы, карточки, модалки).",
+      "Мигрировал проект с HTML5 на Vue 3, переписал 12+ компонентов на Composition API.",
+      "Повысил производительность на +15% по Lighthouse, улучшил структуру и переиспользуемость кода.",
     ],
 
     "experience.verotour.period": "Ноя 2023 — Янв 2024",
@@ -103,6 +116,51 @@ const translations = {
 
     "works.title": "Проекты",
     "works.subtitle": "Ниже — подборка сайтов и проектов.",
+    "works.cases.title": "Fullstack-кейсы",
+    "works.cases.note":
+      "Код под NDA — поэтому вместо ссылок здесь архитектура, стек и метрики.",
+    "works.sites.title": "Сайты и лендинги",
+
+    "works.case.sigx.title": "Эпик с интеграцией eGov (SIGX)",
+    "works.case.sigx.desc":
+      "Saqr Innovations — фича целиком, frontend + backend, от проектирования до production. Интеграция с гос-приложением eGov через SIGX.",
+    "works.case.sigx.points": [
+      "Возврат в приложение по BACKURL из eGov; потеря сессии на iOS решена пробросом сессии через backend.",
+      "Транзакции и фоновые задачи: Redis, BullMQ, cron. Race conditions при конкурентном доступе.",
+      "Множество итераций багфиксов и технических решений уже в production.",
+    ],
+
+    "works.case.os.title": "OS-модуль: real-time система учёта",
+    "works.case.os.desc":
+      "Qazirgi — клиентская архитектура с нуля: экраны, навигация, состояние, роли и доступы.",
+    "works.case.os.points": [
+      "Спроектировал клиентскую архитектуру целиком: экраны, навигация, состояние на Zustand.",
+      "Real-time на WebSocket, система ролей и доступов с админ-режимом.",
+      "Модульная структура под масштабирование, параллельно — рефакторинг legacy-кода.",
+    ],
+
+    "works.case.perf.title": "Ускорение загрузки: с ~15 до ~2 секунд",
+    "works.case.perf.desc":
+      "Qazirgi — страница в худшем кейсе грузилась ~15 секунд. Стало ~2 секунды — в ~7 раз быстрее.",
+    "works.case.perf.points": [
+      "Продиагностировал узкие места в цепочке получения данных.",
+      "Перестроил логику на высокоуровневый polling вместо каскада запросов.",
+      "Результат стабилен и на медленной сети.",
+    ],
+
+    "works.case.kiosk.title": "Киоск: авторизация гостей по Face ID",
+    "works.case.kiosk.desc":
+      "Qazirgi — нативное киоск-приложение на Kotlin для биометрической идентификации гостей.",
+    "works.case.kiosk.points": [
+      "Kotlin-приложение, работающее в режиме киоска без оператора.",
+      "Авторизация гостей по Face ID — биометрическая идентификация.",
+      "Часть той же системы учёта, что и OS-модуль.",
+    ],
+
+    "works.case.pano.title": "360°-viewer на WebGL",
+    "works.case.pano.desc":
+      "Qazirgi — модуль просмотра панорам: управление камерой (yaw/pitch), ограничения движения, оптимизация жизненного цикла сцены. Демо ниже написано с нуля для этого сайта — та же логика камеры, что и в рабочем проекте.",
+
     "works.verotour.title": "VeroTour",
     "works.verotour.desc": "Travel agency — сайт с нуля.",
     "works.snxrs.title": "Snxrs",
@@ -115,10 +173,10 @@ const translations = {
     "works.boxmashin.desc": "Landing page.",
 
     "skills.title": "Навыки",
-    "skills.technologies": "Технологии",
-    "skills.frameworks": "Фреймворки",
-    "skills.tools": "Инструменты",
-    "skills.softskills": "Soft skills",
+    "skills.languages": "Языки и базы данных",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend",
+    "skills.tools": "Инструменты и DevOps",
 
     "education.title": "Образование",
     "education.esil": "Esil University",
@@ -130,7 +188,9 @@ const translations = {
     "contacts.email": "Email:",
     "contacts.phone": "Phone:",
     "contacts.goal":
-      "Цель: Стать частью команды профессионалов и развивать навыки UI.",
+      "Цель: расти как fullstack-инженер и вести фичи от архитектуры до production.",
+    "contacts.cta.telegram": "Написать в Telegram",
+    "contacts.cta.email": "Отправить email",
 
     "footer.copyright": "© [year] Чубаров Родион",
 
@@ -151,57 +211,65 @@ const translations = {
     "nav.downloadResume": "Download Resume",
 
     "hero.title": "Rodion Chubarov",
-    "hero.subtitle": "Frontend Developer",
-    "hero.tagline1": "Connecting code with creativity.",
-    "hero.tagline2": "Creating clean and balanced UI.",
+    "hero.subtitle": "Fullstack Developer",
+    "hero.tagline1": "Owning features from architecture to production.",
+    "hero.tagline2": "React / TypeScript / Node.js / NestJS.",
     "hero.tagline3": "Love music and sports discipline.",
     "hero.location": "Astana, Kazakhstan",
     "hero.english": "English B1",
     "hero.birthdate": "12.12.2006",
 
     "about.title": "About Me",
-    "about.text": `I'm a front-end developer, but I can also work on the back-end. I've always been
-
-drawn to development, and since I was 13, I've been interested in writing simple 2D games,
-
-developing with Arduino, and so on. I've participated in competitions in these areas and even won some.
-
+    "about.text": `<strong>Fullstack developer:</strong> React / TypeScript on the front,
+Node.js / NestJS on the back. I take a feature from idea to production: architecture,
+design, code, bugfixes, release.
 <br />
 <br />
-When I decided to study something in depth, I struggled for a long time to decide whether
-
-development or design was closer to me, and I found a compromise in the form of
-
-front-end development.
-
+Numbers and facts instead of words: <br />
+• Cut page load time <strong>from ~15 to ~2 seconds (~7x)</strong> by restructuring
+the data fetching logic. <br />
+• Single-handedly drove an epic with a payment integration (SIGX) from design to
+production. <br />
+• Fixed bugs that reproduced on one platform only: session loss on iOS — localized
+it through logging and solved it by passing the session through the backend. <br />
+• Built a 360° WebGL / three.js viewer and a Kotlin kiosk app with Face ID
+authorization. <br />
+<br />
+<strong>Backend:</strong> transactions and background jobs with Redis / BullMQ / cron,
+SQL, real-time with WebSocket, solving race conditions under concurrent access.
 <br />
 <br />
-Today, I focus on building scalable client-side applications,
-
-well-thought-out architecture, and a clean UI. I'm confident working both on the front-end
-
-and interacting with the back-end. <br />
+<strong>Frontend:</strong> React, Next.js, Zustand, complex interactivity up to WebGL.
+I can design layouts in Figma and build a design system myself — I once had to choose
+between design and development, and ended up doing both.
 <br />
-How can I help you? <br />
-• Front-end development using Next.js and React <br />
-• Back-end development using NestJS <br />
-• Design and architecture of scalable, high-load systems
 <br />
-• Development of innovative solutions <br />
-• I have a good sense of humor and am easy to communicate with. <br />`,
+Coding since I was 13: started with 2D games and Arduino, competed and won contests.
+Easy to communicate with, quick to dive into a product, and not afraid of someone
+else's legacy code.`,
 
     "experience.title": "Work Experience",
     "experience.qazirgi.period": "Dec 2025 — Present",
-    "experience.qazirgi.role": "Frontend Developer",
+    "experience.qazirgi.role": "Frontend Developer (React + TypeScript)",
     "experience.qazirgi.items": [
-      "Developed a scalable 360° panorama viewer with camera control (yaw/pitch) and OrbitControls integration.",
-      "Implemented camera movement constraints and initial view logic, resolving state and control conflicts.",
-      "Optimized the WebGL scene lifecycle for stable performance.",
-      "Designed the client-side architecture of the OS interface module.",
-      "Implemented screen management, state handling, and navigation logic.",
-      "Integrated WebSocket protocol for real-time communication.",
-      "Configured access control system and admin modes.",
-      "Ensured modularity and scalability of the client application.",
+      "Refactored a legacy frontend: identified and fixed bugs, improved stability and maintainability.",
+      "Built a 360° panorama viewer module with WebGL / three.js: camera control (yaw/pitch), custom interaction logic and movement constraints.",
+      "Optimized the WebGL scene lifecycle, improving rendering stability.",
+      "Designed the client-side architecture of an inventory system (OS module): screens, navigation, state management with Zustand.",
+      "Integrated WebSocket for real-time functionality, implemented a roles and access system including an admin mode.",
+      "Developed a landing catalog for selling batteries: filtering, request form, mobile adaptation.",
+      "Cut page load time from ~15 to ~2 seconds by restructuring data fetching into high-level polling.",
+      "Built a Kotlin kiosk app for guest authorization via Face ID.",
+    ],
+    "experience.saqr.period": "May 2026 — Jul 2026",
+    "experience.saqr.role": "Software Engineer (Fullstack)",
+    "experience.saqr.items": [
+      "Owned an epic from scratch to production: designed and implemented the entire feature (frontend + backend) through many iterations of bugfixes.",
+      "Integrated BACKURL return flow via SIGX — integration with the eGov app.",
+      "Diagnosed and fixed a critical iOS bug: localized it through logging and systematic troubleshooting, restored correct behavior on all platforms.",
+      "Designed transactions and background jobs with Redis, BullMQ and cron; solved race conditions under concurrent access.",
+      "Redesigned the UI and made UI/UX decisions that improved key user flows.",
+      "Stack: TypeScript, NestJS, Node.js, SQL, Redis, BullMQ, React.",
     ],
     "experience.lst.period": "Oct 2025 — Nov 2025",
     "experience.lst.role": "Frontend Dev",
@@ -216,15 +284,10 @@ How can I help you? <br />
     ],
 
     "experience.startup.period": "Jun 2025 — Aug 2025",
-    "experience.startup.role": "Frontend Dev",
+    "experience.startup.role": "Frontend Dev (React)",
     "experience.startup.items": [
-      "Worked on the business side of the product: admin panel, internal logic, device management.",
-      "Used TypeScript and React, connected APIs for data retrieval and processing.",
-      "Participated in improving the overall project architecture with the team.",
-      "Created interfaces for managing products, statistics, devices, inventory.",
-      "Implemented complex business logic (validations, calculations, data synchronization).",
-      "Did not develop the user payment interface, but was responsible for all admin functionality.",
-      "Worked on assigned tasks, actively participated in technical discussions and decision making.",
+      "Developed the frontend for a vending machine: full flow of product selection — payment — confirmation.",
+      "Integrated with the backend and database, implemented an admin panel and stable real-time interface operation.",
     ],
 
     "experience.lifetrend.period": "Aug 2025",
@@ -237,8 +300,9 @@ How can I help you? <br />
 
     "experience.daft.period": "Feb 2024 — Apr 2024",
     "experience.daft.items": [
-      "Migrated project from vanilla HTML5 to Vue 3, rewrote over 12 components to Composition API.",
-      "Optimized build, reduced bundle size and accelerated application loading.",
+      "Designed the visual style and UI/UX from scratch: Figma layouts, a design system (buttons, forms, cards, modals).",
+      "Migrated the project from HTML5 to Vue 3, rewrote 12+ components to Composition API.",
+      "Improved performance by +15% in Lighthouse, improved code structure and reusability.",
     ],
 
     "experience.verotour.period": "Nov 2023 — Jan 2024",
@@ -251,6 +315,51 @@ How can I help you? <br />
 
     "works.title": "Projects",
     "works.subtitle": "Below is a selection of websites and projects.",
+    "works.cases.title": "Fullstack case studies",
+    "works.cases.note":
+      "The code is under NDA — so instead of links, here are the architecture, stack and metrics.",
+    "works.sites.title": "Websites & landing pages",
+
+    "works.case.sigx.title": "Epic with eGov (SIGX) integration",
+    "works.case.sigx.desc":
+      "Saqr Innovations — the entire feature, frontend + backend, from design to production. Integration with the eGov government app via SIGX.",
+    "works.case.sigx.points": [
+      "BACKURL return flow from the eGov app; iOS session loss solved by passing the session through the backend.",
+      "Transactions and background jobs: Redis, BullMQ, cron. Race conditions under concurrent access.",
+      "Many iterations of bugfixes and technical decisions in production.",
+    ],
+
+    "works.case.os.title": "OS module: real-time inventory system",
+    "works.case.os.desc":
+      "Qazirgi — client architecture from scratch: screens, navigation, state, roles and access control.",
+    "works.case.os.points": [
+      "Designed the entire client architecture: screens, navigation, state with Zustand.",
+      "Real-time with WebSocket, roles and access system with an admin mode.",
+      "Modular structure built for scaling, alongside legacy code refactoring.",
+    ],
+
+    "works.case.perf.title": "Page load: from ~15 down to ~2 seconds",
+    "works.case.perf.desc":
+      "Qazirgi — in the worst case the page took ~15 seconds to load. Now it's ~2 seconds — ~7x faster.",
+    "works.case.perf.points": [
+      "Diagnosed the bottlenecks in the data fetching chain.",
+      "Restructured the logic into high-level polling instead of a cascade of requests.",
+      "The result is stable even on slow networks.",
+    ],
+
+    "works.case.kiosk.title": "Kiosk: guest authorization via Face ID",
+    "works.case.kiosk.desc":
+      "Qazirgi — a native Kotlin kiosk app for biometric guest identification.",
+    "works.case.kiosk.points": [
+      "A Kotlin app running in kiosk mode without an operator.",
+      "Guest authorization via Face ID — biometric identification.",
+      "Part of the same inventory system as the OS module.",
+    ],
+
+    "works.case.pano.title": "360° viewer with WebGL",
+    "works.case.pano.desc":
+      "Qazirgi — a panorama viewer module: camera control (yaw/pitch), movement constraints, scene lifecycle optimization. The demo below was written from scratch for this site — the same camera logic as in the production project.",
+
     "works.verotour.title": "VeroTour",
     "works.verotour.desc": "Travel agency — website from scratch.",
     "works.snxrs.title": "Snxrs",
@@ -263,10 +372,10 @@ How can I help you? <br />
     "works.boxmashin.desc": "Landing page.",
 
     "skills.title": "Skills",
-    "skills.technologies": "Technologies",
-    "skills.frameworks": "Frameworks",
-    "skills.tools": "Tools",
-    "skills.softskills": "Soft skills",
+    "skills.languages": "Languages & Databases",
+    "skills.frontend": "Frontend",
+    "skills.backend": "Backend",
+    "skills.tools": "Tools & DevOps",
 
     "education.title": "Education",
     "education.esil": "Esil University",
@@ -278,7 +387,9 @@ How can I help you? <br />
     "contacts.email": "Email:",
     "contacts.phone": "Phone:",
     "contacts.goal":
-      "Goal: To become part of a professional team and develop UI skills.",
+      "Goal: to grow as a fullstack engineer and own features from architecture to production.",
+    "contacts.cta.telegram": "Message on Telegram",
+    "contacts.cta.email": "Send an email",
 
     "footer.copyright": "© [year] Rodion Chubarov",
 

@@ -5,9 +5,19 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Чубаров Родион — Frontend Developer</title>
+    <title>Чубаров Родион — Fullstack Developer</title>
+    <meta name="description"
+        content="Чубаров Родион — fullstack-разработчик: React / TypeScript / Node.js / NestJS. Real-time на WebSocket, очереди на Redis / BullMQ, WebGL. Кейсы, опыт работы и контакты." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Чубаров Родион — Fullstack Developer" />
+    <meta property="og:description"
+        content="React / TypeScript / Node.js / NestJS. Кейсы: платёжная интеграция, 360° WebGL-viewer, real-time системы." />
+    <!-- После деплоя замените og:image на абсолютный URL (https://домен/img/works/vero.png) -->
+    <meta property="og:image" content="img/works/vero.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#060607" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
@@ -51,8 +61,7 @@
             </div>
 
             <div class="header-actions">
-                <a class="btn-cv" href="https://drive.google.com/file/d/1cjM5MYayPe9xfWami4Rtf94nVtrFHEG2/view"
-                    target="_blank">Резюме (PDF)</a>
+                <a class="btn-cv" href="resume.html" target="_blank">Резюме (PDF)</a>
             </div>
 
             <button class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
@@ -69,7 +78,7 @@
         <a href="#skills">Навыки</a>
         <a href="#contacts">Контакты</a>
         <br />
-        <a class="btn-cv" href="https://drive.google.com/file/d/1cjM5MYayPe9xfWami4Rtf94nVtrFHEG2/view" target="_blank"
+        <a class="btn-cv" href="resume.html" target="_blank"
             style="text-align:center;color:#000">Скачать Резюме</a>
         <button id="langToggleMobile" class="lang-btn-mobile"><span class="lang-flag">🌐</span><span
                 class="lang-text-mobile">English</span></button>
@@ -77,12 +86,12 @@
 
     <main>
         <section id="hero" class="hero section-track">
-            <div class="hero-bg-gif"></div>
+            <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
             <div class="container hero-grid">
                 <div class="hero-left reveal">
                     <h1 class="name">
                         Чубаров Родион
-                        <span class="muted">Frontend Developer</span>
+                        <span class="muted">Fullstack Developer</span>
                     </h1>
 
                     <div class="tagline">
@@ -123,20 +132,46 @@
                     <div class="ti-left">
                         <h3>Qazirgi Management</h3>
                         <time>Дек 2025 — настоящее время</time>
-                        <p class="role">Frontend Developer</p>
+                        <p class="role">Frontend Developer (React + TypeScript)</p>
                     </div>
                     <div class="ti-right">
                         <ul>
-                            <li><strong>Модуль 360°:</strong> разработал масштабируемый viewer панорам с управлением
-                                yaw/pitch и интеграцией OrbitControls.</li>
-                            <li>Настроил ограничения камеры и логику первого вида, устранил конфликты управления
-                                состоянием.</li>
-                            <li>Оптимизировал жизненный цикл WebGL-сцены.</li>
-                            <li><strong>Модуль OS:</strong> спроектировал клиентскую архитектуру интерфейса системы.
-                            </li>
-                            <li>Реализовал управление экранами, состояниями, навигацией и WebSocket-интеграцию.</li>
-                            <li>Настроил систему доступов и админ-режимы.</li>
-                            <li>Обеспечил стабильную работу в реальном времени и модульность для масштабирования.</li>
+                            <li>Рефакторил legacy-фронтенд: выявлял и устранял баги, повышал стабильность и
+                                поддерживаемость кода.</li>
+                            <li>Разработал модуль просмотра 360°-панорам на WebGL / three.js: управление камерой
+                                (yaw/pitch), кастомная логика взаимодействия и ограничения движения.</li>
+                            <li>Оптимизировал жизненный цикл WebGL-сцены, повысив стабильность рендеринга.</li>
+                            <li>Спроектировал клиентскую архитектуру системы учёта (OS-модуль): экраны, навигация,
+                                управление состоянием на Zustand.</li>
+                            <li>Интегрировал WebSocket для работы в реальном времени, реализовал систему ролей и
+                                доступов, включая админ-режим.</li>
+                            <li>Разработал лендинг-каталог для продажи аккумуляторов: фильтрация, форма заявок,
+                                адаптация под мобильные устройства.</li>
+                            <li>Ускорил загрузку страницы с ~15 до ~2 секунд, перестроив логику получения данных на
+                                высокоуровневый polling.</li>
+                            <li>Разработал киоск-приложение на Kotlin для авторизации гостей по Face ID.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-exp="saqr">
+                    <div class="ti-left">
+                        <h3>Saqr Innovations Ltd.</h3>
+                        <time>Май 2026 — Июль 2026</time>
+                        <p class="role">Software Engineer (Fullstack)</p>
+                    </div>
+                    <div class="ti-right">
+                        <ul>
+                            <li>Вёл эпик с нуля до production: спроектировал и реализовал функциональность целиком
+                                (frontend + backend), провёл через множество итераций багфиксов.</li>
+                            <li>Интегрировал возврат по BACKURL через SIGX — интеграция с приложением eGov.</li>
+                            <li>Диагностировал и устранил критический баг на iOS: локализовал через логирование и
+                                системный troubleshooting, восстановил работу на всех платформах.</li>
+                            <li>Проектировал транзакции и фоновые задачи на Redis, BullMQ и cron; решал race
+                                conditions при конкурентном доступе.</li>
+                            <li>Провёл редизайн интерфейса и принимал UI/UX-решения, улучшившие ключевые
+                                пользовательские сценарии.</li>
+                            <li>Стек: TypeScript, NestJS, Node.js, SQL, Redis, BullMQ, React.</li>
                         </ul>
                     </div>
                 </article>
@@ -165,8 +200,10 @@
                     </div>
                     <div class="ti-right">
                         <ul>
-                            <li>Работал над админ-панелью, внутренней логикой и управлением аппаратами.</li>
-                            <li>Интегрировал API, реализовывал бизнес-логику и синхронизацию данных.</li>
+                            <li>Разработал frontend вендингового аппарата: полный сценарий «выбор товара — оплата —
+                                подтверждение».</li>
+                            <li>Интегрировал взаимодействие с backend и базой данных, реализовал админ-панель и
+                                стабильную работу интерфейса в реальном времени.</li>
                         </ul>
                     </div>
                 </article>
@@ -189,8 +226,11 @@
                     </div>
                     <div class="ti-right">
                         <ul>
-                            <li>Мигрировал проект с ванильного HTML5 на Vue 3, переписал 12+ компонентов.</li>
-                            <li>Оптимизировал сборку и уменьшил вес бандла.</li>
+                            <li>С нуля спроектировал визуальный стиль и UI/UX: макеты в Figma, дизайн-система
+                                (кнопки, формы, карточки, модалки).</li>
+                            <li>Мигрировал проект с HTML5 на Vue 3, переписал 12+ компонентов на Composition API.</li>
+                            <li>Повысил производительность на +15% по Lighthouse, улучшил структуру и
+                                переиспользуемость кода.</li>
                         </ul>
                     </div>
                 </article>
@@ -211,7 +251,88 @@
         </section>
         <section id="works" class="section container section-track reveal">
             <h2 class="section-title">Проекты</h2>
-            <p class="lead">Ниже — подборка сайтов и проектов.</p>
+
+            <h3 class="cases-title" data-i18n="works.cases.title">Fullstack-кейсы</h3>
+            <p class="lead cases-note" data-i18n="works.cases.note">Код под NDA — поэтому вместо ссылок здесь
+                архитектура, стек и метрики.</p>
+
+            <div class="cases-grid">
+                <article class="case-card spotlight-card">
+                    <div class="spotlight-overlay"></div>
+                    <div class="case-head">
+                        <h4 data-i18n="works.case.sigx.title">Эпик с интеграцией eGov (SIGX)</h4>
+                        <span class="case-badge">NDA</span>
+                    </div>
+                    <p class="case-desc" data-i18n="works.case.sigx.desc">Saqr Innovations — фича целиком, frontend +
+                        backend, от проектирования до production. Интеграция с гос-приложением eGov через SIGX.</p>
+                    <ul class="case-points" data-i18n-list="works.case.sigx.points"></ul>
+                    <div class="tags">
+                        <span>NestJS</span><span>Node.js</span><span>SQL</span><span>Redis</span><span>BullMQ</span><span>React</span>
+                    </div>
+                </article>
+
+                <article class="case-card spotlight-card">
+                    <div class="spotlight-overlay"></div>
+                    <div class="case-head">
+                        <h4 data-i18n="works.case.os.title">OS-модуль: real-time система учёта</h4>
+                        <span class="case-badge">NDA</span>
+                    </div>
+                    <p class="case-desc" data-i18n="works.case.os.desc">Qazirgi — клиентская архитектура с нуля:
+                        экраны, навигация, состояние, роли и доступы.</p>
+                    <ul class="case-points" data-i18n-list="works.case.os.points"></ul>
+                    <div class="tags">
+                        <span>React</span><span>TypeScript</span><span>Zustand</span><span>WebSocket</span>
+                    </div>
+                </article>
+
+                <article class="case-card spotlight-card">
+                    <div class="spotlight-overlay"></div>
+                    <div class="case-head">
+                        <h4 data-i18n="works.case.perf.title">Ускорение загрузки: с ~15 до ~2 секунд</h4>
+                        <span class="case-badge">NDA</span>
+                    </div>
+                    <p class="case-desc" data-i18n="works.case.perf.desc">Qazirgi — страница в худшем кейсе грузилась
+                        ~15 секунд. Стало ~2 секунды — в ~7 раз быстрее.</p>
+                    <ul class="case-points" data-i18n-list="works.case.perf.points"></ul>
+                    <div class="tags">
+                        <span>React</span><span>TypeScript</span><span>Performance</span>
+                    </div>
+                </article>
+
+                <article class="case-card spotlight-card">
+                    <div class="spotlight-overlay"></div>
+                    <div class="case-head">
+                        <h4 data-i18n="works.case.kiosk.title">Киоск: авторизация гостей по Face ID</h4>
+                        <span class="case-badge">NDA</span>
+                    </div>
+                    <p class="case-desc" data-i18n="works.case.kiosk.desc">Qazirgi — нативное киоск-приложение на
+                        Kotlin для биометрической идентификации гостей.</p>
+                    <ul class="case-points" data-i18n-list="works.case.kiosk.points"></ul>
+                    <div class="tags">
+                        <span>Kotlin</span><span>Android</span><span>Biometrics</span>
+                    </div>
+                </article>
+
+                <article class="case-card case-card-wide spotlight-card">
+                    <div class="spotlight-overlay"></div>
+                    <div class="case-head">
+                        <h4 data-i18n="works.case.pano.title">360°-viewer на WebGL</h4>
+                        <span class="case-badge live">LIVE DEMO</span>
+                    </div>
+                    <p class="case-desc" data-i18n="works.case.pano.desc">Qazirgi — модуль просмотра панорам:
+                        управление камерой (yaw/pitch), ограничения движения, оптимизация жизненного цикла сцены.
+                        Демо ниже написано с нуля для этого сайта — та же логика камеры, что и в рабочем проекте.</p>
+                    <div class="pano-demo" id="panoDemo">
+                        <canvas id="panoCanvas"></canvas>
+                    </div>
+                    <div class="tags">
+                        <span>three.js</span><span>WebGL</span><span>TypeScript</span>
+                    </div>
+                </article>
+            </div>
+
+            <h3 class="cases-title" data-i18n="works.sites.title">Сайты и лендинги</h3>
+            <p class="lead" data-i18n="works.subtitle">Ниже — подборка сайтов и проектов.</p>
 
             <div class="projects-grid">
                 <a class="project-card spotlight-card" href="https://verotour.kz/" target="_blank">
@@ -285,27 +406,29 @@
             <h2 class="section-title">Навыки</h2>
             <div class="skills-grid">
                 <div class="skill-block">
-                    <h5>Технологии</h5>
+                    <h5>Языки и базы данных</h5>
                     <div class="skill-tags">
-                        <span>HTML5</span><span>CSS3</span><span>SASS</span><span>JS</span><span>TS</span>
+                        <span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>HTML5</span><span>CSS3 /
+                            SASS</span>
                     </div>
                 </div>
                 <div class="skill-block">
-                    <h5>Фреймворки</h5>
+                    <h5>Frontend</h5>
                     <div class="skill-tags">
-                        <span>React</span><span>Vue 3</span><span>Next.js</span><span>React Native</span>
+                        <span>React</span><span>Next.js</span><span>Zustand</span><span>Vue 3</span><span>WebGL /
+                            three.js</span>
                     </div>
                 </div>
                 <div class="skill-block">
-                    <h5>Инструменты</h5>
+                    <h5>Backend</h5>
                     <div class="skill-tags">
-                        <span>Figma</span><span>Git</span><span>Webpack</span><span>Vite</span>
+                        <span>Node.js</span><span>NestJS</span><span>Redis</span><span>BullMQ</span><span>WebSocket</span>
                     </div>
                 </div>
                 <div class="skill-block">
-                    <h5>Soft skills</h5>
+                    <h5>Инструменты и DevOps</h5>
                     <div class="skill-tags">
-                        <span>Time Management</span><span>Creativity</span><span>Adaptability</span>
+                        <span>Git</span><span>Kubernetes</span><span>Figma</span><span>Vite</span><span>Webpack</span>
                     </div>
                 </div>
             </div>
@@ -327,28 +450,27 @@
 
         <section id="contacts" class="section container section-track reveal">
             <h2 class="section-title">Контакты</h2>
-            <div style="
-                    background: rgba(255, 255, 255, 0.02);
-                    padding: 30px;
-                    border-radius: 12px;
-                    border: 1px solid rgba(255, 255, 255, 0.03);
-                ">
-                <p>
-                    <strong>Email:</strong>
-                    <a href="mailto:rodion.ch06@gmail.com" style="color: var(--accent)">rodion.ch06@gmail.com</a>
+            <div class="contacts-card">
+                <div class="contacts-info">
+                    <p><strong data-i18n="contacts.email">Email:</strong>
+                        <a class="c-link" href="mailto:rodion.ch06@gmail.com">rodion.ch06@gmail.com</a>
+                    </p>
+                    <p><strong data-i18n="contacts.phone">Phone:</strong>
+                        <a class="c-link" href="tel:+77052940884">+7 705 294 0884</a>
+                    </p>
+                    <p><strong>Telegram:</strong>
+                        <a class="c-link" href="https://t.me/rodion_dev" target="_blank">@rodion_dev</a>
+                    </p>
+                </div>
+                <p class="contacts-goal" data-i18n="contacts.goal">
+                    Цель: расти как fullstack-инженер и вести фичи от архитектуры до production.
                 </p>
-                <p>
-                    <strong>Phone:</strong>
-                    <a href="tel:+77052940884" style="color: var(--accent)">+7 705 294 0884</a>
-                </p>
-
-                <strong>Telegram:</strong>
-
-                <a href="https://t.me/rodion_dev" style="color: var(--accent)" target="_blank">@rodion_dev</a>
-
-                <p style="margin-top: 20px; color: var(--muted)">
-                    Цель: Стать частью команды профессионалов и развивать навыки UI.
-                </p>
+                <div class="cta-row">
+                    <a class="btn-cta primary" href="https://t.me/rodion_dev" target="_blank"
+                        data-i18n="contacts.cta.telegram">Написать в Telegram</a>
+                    <a class="btn-cta ghost" href="mailto:rodion.ch06@gmail.com"
+                        data-i18n="contacts.cta.email">Отправить email</a>
+                </div>
             </div>
         </section>
     </main>
@@ -364,6 +486,27 @@
             </div>
         </div>
     </footer>
+
+    <button id="termFab" class="term-fab" aria-label="Открыть терминал" title="Terminal">
+        <span class="term-fab-icon">&gt;_</span>
+    </button>
+
+    <div id="terminal" class="terminal" hidden>
+        <div class="term-header">
+            <span class="term-dots">
+                <button class="td td-r" id="termDotClose" aria-label="Закрыть" title="Закрыть"></button>
+                <button class="td td-y" id="termDotMin" aria-label="Свернуть" title="Свернуть"></button>
+                <button class="td td-g" id="termDotMax" aria-label="Развернуть" title="Развернуть"></button>
+            </span>
+            <span class="term-title">rodion@portfolio:~</span>
+            <button id="termClose" class="term-close" aria-label="Закрыть терминал">✕</button>
+        </div>
+        <div class="term-body" id="termBody"></div>
+        <form id="termForm" class="term-form" autocomplete="off">
+            <span class="term-prompt">$</span>
+            <input id="termInput" class="term-input" spellcheck="false" autocomplete="off" />
+        </form>
+    </div>
 
     <script src="js/translations.js"></script>
     <script src="js/script.js"></script>
