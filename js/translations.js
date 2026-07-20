@@ -26,7 +26,7 @@ const translations = {
                 Цифры и факты вместо слов: <br />
                 • Ускорил загрузку страницы <strong>с ~15 до ~2 секунд (в ~7 раз)</strong>,
                 перестроив логику получения данных. <br />
-                • В одиночку провёл эпик с платёжной интеграцией (SIGX) от проектирования
+                • В одиночку провёл эпик учёта активов от проектирования
                 до production. <br />
                 • Чинил баги, которые воспроизводились только на одной платформе: потеря
                 сессии на iOS — локализовал через логирование и решил пробросом сессии
@@ -65,8 +65,8 @@ const translations = {
     "experience.saqr.period": "Май 2026 — Июль 2026",
     "experience.saqr.role": "Software Engineer (Fullstack)",
     "experience.saqr.items": [
-      "Вёл эпик с нуля до production: спроектировал и реализовал функциональность целиком (frontend + backend), провёл через множество итераций багфиксов.",
-      "Интегрировал возврат по BACKURL через SIGX — интеграция с приложением eGov.",
+      "Вёл эпик учёта активов с нуля до production: спроектировал и реализовал функциональность целиком (frontend + backend), провёл через множество итераций багфиксов.",
+      "Доработал интеграцию с приложением eGov (SIGX): возврат по BACKURL.",
       "Диагностировал и устранил критический баг на iOS: локализовал через логирование и системный troubleshooting, восстановил работу на всех платформах.",
       "Проектировал транзакции и фоновые задачи на Redis, BullMQ и cron; решал race conditions при конкурентном доступе.",
       "Провёл редизайн интерфейса и принимал UI/UX-решения, улучшившие ключевые пользовательские сценарии.",
@@ -121,12 +121,12 @@ const translations = {
       "Код под NDA — поэтому вместо ссылок здесь архитектура, стек и метрики.",
     "works.sites.title": "Сайты и лендинги",
 
-    "works.case.sigx.title": "Эпик с интеграцией eGov (SIGX)",
+    "works.case.sigx.title": "Эпик: учёт активов",
     "works.case.sigx.desc":
-      "Saqr Innovations — фича целиком, frontend + backend, от проектирования до production. Интеграция с гос-приложением eGov через SIGX.",
+      "Saqr Innovations — эпик учёта активов целиком, frontend + backend, от проектирования до production.",
     "works.case.sigx.points": [
-      "Возврат в приложение по BACKURL из eGov; потеря сессии на iOS решена пробросом сессии через backend.",
       "Транзакции и фоновые задачи: Redis, BullMQ, cron. Race conditions при конкурентном доступе.",
+      "Доработал интеграцию с гос-приложением eGov (SIGX): возврат по BACKURL, потеря сессии на iOS решена пробросом сессии через backend.",
       "Множество итераций багфиксов и технических решений уже в production.",
     ],
 
@@ -228,7 +228,7 @@ design, code, bugfixes, release.
 Numbers and facts instead of words: <br />
 • Cut page load time <strong>from ~15 to ~2 seconds (~7x)</strong> by restructuring
 the data fetching logic. <br />
-• Single-handedly drove an epic with a payment integration (SIGX) from design to
+• Single-handedly drove an asset accounting epic from design to
 production. <br />
 • Fixed bugs that reproduced on one platform only: session loss on iOS — localized
 it through logging and solved it by passing the session through the backend. <br />
@@ -264,8 +264,8 @@ else's legacy code.`,
     "experience.saqr.period": "May 2026 — Jul 2026",
     "experience.saqr.role": "Software Engineer (Fullstack)",
     "experience.saqr.items": [
-      "Owned an epic from scratch to production: designed and implemented the entire feature (frontend + backend) through many iterations of bugfixes.",
-      "Integrated BACKURL return flow via SIGX — integration with the eGov app.",
+      "Owned an asset accounting epic from scratch to production: designed and implemented the entire feature (frontend + backend) through many iterations of bugfixes.",
+      "Improved the eGov app integration (SIGX): BACKURL return flow.",
       "Diagnosed and fixed a critical iOS bug: localized it through logging and systematic troubleshooting, restored correct behavior on all platforms.",
       "Designed transactions and background jobs with Redis, BullMQ and cron; solved race conditions under concurrent access.",
       "Redesigned the UI and made UI/UX decisions that improved key user flows.",
@@ -320,12 +320,12 @@ else's legacy code.`,
       "The code is under NDA — so instead of links, here are the architecture, stack and metrics.",
     "works.sites.title": "Websites & landing pages",
 
-    "works.case.sigx.title": "Epic with eGov (SIGX) integration",
+    "works.case.sigx.title": "Epic: asset accounting",
     "works.case.sigx.desc":
-      "Saqr Innovations — the entire feature, frontend + backend, from design to production. Integration with the eGov government app via SIGX.",
+      "Saqr Innovations — the entire asset accounting epic, frontend + backend, from design to production.",
     "works.case.sigx.points": [
-      "BACKURL return flow from the eGov app; iOS session loss solved by passing the session through the backend.",
       "Transactions and background jobs: Redis, BullMQ, cron. Race conditions under concurrent access.",
+      "Improved the eGov (SIGX) government app integration: BACKURL return flow, iOS session loss solved by passing the session through the backend.",
       "Many iterations of bugfixes and technical decisions in production.",
     ],
 

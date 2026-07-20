@@ -545,7 +545,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!dragging) return;
       // тянем влево — камера поворачивает вправо (сцена уходит вправо)
       targetYaw += (e.clientX - lastX) * 0.005;
-      targetPitch -= (e.clientY - lastY) * 0.005;
+      // тянем вверх — камера смотрит вниз (инвертированная вертикаль)
+      targetPitch += (e.clientY - lastY) * 0.005;
       targetPitch = Math.max(PITCH_MIN, Math.min(PITCH_MAX, targetPitch));
       lastX = e.clientX;
       lastY = e.clientY;
