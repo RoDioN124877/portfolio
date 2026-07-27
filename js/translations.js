@@ -16,7 +16,6 @@ const translations = {
     "hero.tagline3": "Люблю музыку и дисциплину спорта.",
     "hero.location": "Астана, Казахстан",
     "hero.english": "English B2",
-    "hero.birthdate": "12.12.2006",
 
     "about.title": "О себе",
     "about.text": `<strong>Fullstack-разработчик</strong> с фокусом на React / TypeScript (frontend)
@@ -50,11 +49,11 @@ const translations = {
     "experience.saqr.role": "Software Engineer (Fullstack)",
     "experience.saqr.items": [
       "Вёл эпик учёта активов с нуля до production: спроектировал и реализовал функциональность целиком (frontend + backend), провёл через множество итераций багфиксов.",
-      "Доработал интеграцию с приложением eGov (SIGX): возврат по BACKURL.",
+      "Доработал интеграцию с приложением eGov (SIGEX): возврат по BACKURL.",
       "Диагностировал и устранил критический баг на iOS: локализовал через логирование и системный troubleshooting, восстановил работу на всех платформах.",
       "Проектировал транзакции и фоновые задачи на Redis, BullMQ и cron; решал race conditions при конкурентном доступе.",
       "Провёл редизайн интерфейса и принимал UI/UX-решения, улучшившие ключевые пользовательские сценарии.",
-      "Стек: TypeScript, NestJS, Node.js, SQL, Redis, BullMQ, React.",
+      "Стек: TypeScript, NestJS, Node.js, PostgreSQL, TypeORM, REST API, JWT, Redis, BullMQ, Docker, React.",
     ],
     "experience.freelance.period": "Ноя 2023 — Ноя 2025 · удалённо",
     "experience.freelance.role": "Fullstack / Frontend Developer · фриланс/контракт",
@@ -78,7 +77,7 @@ const translations = {
       "Saqr Innovations — эпик учёта активов целиком, frontend + backend, от проектирования до production.",
     "works.case.sigx.points": [
       "Транзакции и фоновые задачи: Redis, BullMQ, cron. Race conditions при конкурентном доступе.",
-      "Доработал интеграцию с гос-приложением eGov (SIGX): возврат по BACKURL, потеря сессии на iOS решена пробросом сессии через backend.",
+      "Доработал интеграцию с гос-приложением eGov (SIGEX): возврат по BACKURL, потеря сессии на iOS решена пробросом сессии через backend.",
       "Множество итераций багфиксов и технических решений уже в production.",
     ],
 
@@ -170,7 +169,6 @@ const translations = {
     "hero.tagline3": "Love music and sports discipline.",
     "hero.location": "Astana, Kazakhstan",
     "hero.english": "English B2",
-    "hero.birthdate": "12.12.2006",
 
     "about.title": "About Me",
     "about.text": `<strong>Fullstack developer</strong> focused on React / TypeScript (frontend)
@@ -203,11 +201,11 @@ single-handedly drove an <strong>asset-accounting epic</strong> from design to p
     "experience.saqr.role": "Software Engineer (Fullstack)",
     "experience.saqr.items": [
       "Owned an asset accounting epic from scratch to production: designed and implemented the entire feature (frontend + backend) through many iterations of bugfixes.",
-      "Improved the eGov app integration (SIGX): BACKURL return flow.",
+      "Improved the eGov app integration (SIGEX): BACKURL return flow.",
       "Diagnosed and fixed a critical iOS bug: localized it through logging and systematic troubleshooting, restored correct behavior on all platforms.",
       "Designed transactions and background jobs with Redis, BullMQ and cron; solved race conditions under concurrent access.",
       "Redesigned the UI and made UI/UX decisions that improved key user flows.",
-      "Stack: TypeScript, NestJS, Node.js, SQL, Redis, BullMQ, React.",
+      "Stack: TypeScript, NestJS, Node.js, PostgreSQL, TypeORM, REST API, JWT, Redis, BullMQ, Docker, React.",
     ],
     "experience.freelance.period": "Nov 2023 — Nov 2025 · Remote",
     "experience.freelance.role": "Fullstack / Frontend Developer · freelance/contract",
@@ -231,7 +229,7 @@ single-handedly drove an <strong>asset-accounting epic</strong> from design to p
       "Saqr Innovations — the entire asset accounting epic, frontend + backend, from design to production.",
     "works.case.sigx.points": [
       "Transactions and background jobs: Redis, BullMQ, cron. Race conditions under concurrent access.",
-      "Improved the eGov (SIGX) government app integration: BACKURL return flow, iOS session loss solved by passing the session through the backend.",
+      "Improved the eGov (SIGEX) government app integration: BACKURL return flow, iOS session loss solved by passing the session through the backend.",
       "Many iterations of bugfixes and technical decisions in production.",
     ],
 

@@ -28,7 +28,7 @@
       // mobile menu
       document.querySelectorAll("#mobileMenu a").forEach((link, idx) => {
         // порядок должен совпадать с порядком <a> внутри #mobileMenu
-        const keys = ["nav.about","nav.experience","nav.works","nav.skills","nav.contacts","nav.viewResume","nav.downloadResume"];
+        const keys = ["nav.about","nav.experience","nav.works","nav.skills","nav.contacts","nav.viewResume"];
         if (t[keys[idx]]) link.textContent = t[keys[idx]];
       });
 
@@ -39,7 +39,12 @@
         ? "Чубаров Родион - Fullstack-разработчик - Резюме.pdf"
         : "Rodion Chubarov - Fullstack Developer - CV.pdf";
       document.querySelectorAll(".btn-cv").forEach(btn => {
-        btn.textContent = btn.closest("#mobileMenu") ? t["nav.downloadResume"] : t["nav.resume"];
+        // data-cv="view" — открывает страницу резюме, скачивание уже внутри неё
+        if (btn.dataset.cv === "view") {
+          btn.textContent = t["nav.viewResume"];
+          return;
+        }
+        btn.textContent = t["nav.resume"];
         btn.setAttribute("href", cvFile);
         btn.setAttribute("download", cvName);
         btn.removeAttribute("target");
@@ -54,10 +59,9 @@
       }
 
       const metaSpans = document.querySelectorAll(".meta span");
-      if (metaSpans.length >= 3) {
+      if (metaSpans.length >= 2) {
         metaSpans[0].textContent = t["hero.location"] || metaSpans[0].textContent;
         metaSpans[1].textContent = t["hero.english"] || metaSpans[1].textContent;
-        metaSpans[2].textContent = t["hero.birthdate"] || metaSpans[2].textContent;
       }
 
       // section titles
