@@ -21,7 +21,7 @@
         greet2: "Введите 'help' — покажу, что умею.",
         help: "Команды: whoami, about, stack, cases, ls, contacts, cv, history, neofetch, achievements, sudo, clear, exit",
         about: "Fullstack-разработчик: React / TypeScript / Node.js / NestJS.\nВеду фичи от архитектуры до production.",
-        stack: "Frontend: React, Next.js, Zustand, WebGL / three.js\nBackend:  Node.js, NestJS, SQL, Redis, BullMQ\nПрочее:   Git, Kubernetes, Figma",
+        stack: "Frontend: React, Next.js, Zustand, Vue 3, WebGL / three.js\nBackend:  Node.js, NestJS, REST API, TypeORM, JWT, SQL / PostgreSQL, Redis, BullMQ, WebSocket\nПрочее:   Git, Docker, Vite / Webpack, Figma",
         casesEmpty: "кейсы не найдены",
         folders: [["о-себе/", "about"], ["опыт/", "experience"], ["кейсы/", "works"], ["навыки/", "skills"], ["контакты/", "contacts"]],
         secretFolder: "секреты/",
@@ -48,14 +48,14 @@
         greet2: "Type 'help' to see what I can do.",
         help: "Commands: whoami, about, stack, cases, ls, contacts, cv, history, neofetch, achievements, sudo, clear, exit",
         about: "Fullstack developer: React / TypeScript / Node.js / NestJS.\nI take features from architecture to production.",
-        stack: "Frontend: React, Next.js, Zustand, WebGL / three.js\nBackend:  Node.js, NestJS, SQL, Redis, BullMQ\nOther:    Git, Kubernetes, Figma",
+        stack: "Frontend: React, Next.js, Zustand, Vue 3, WebGL / three.js\nBackend:  Node.js, NestJS, REST API, TypeORM, JWT, SQL / PostgreSQL, Redis, BullMQ, WebSocket\nOther:    Git, Docker, Vite / Webpack, Figma",
         casesEmpty: "no cases found",
         folders: [["about/", "about"], ["experience/", "experience"], ["works/", "works"], ["skills/", "skills"], ["contacts/", "contacts"]],
         secretFolder: "secrets/",
         lsHint: "(click a folder to jump to a section)",
         denied: "permission denied 🔒 (tried ↑↑↓↓←→←→BA yet? 👊)",
         deniedHint: "…but something is rustling behind the door. Try: 'snake', 'matrix', 'neofetch'",
-        cvOpen: "Opening resume…",
+        cvOpen: "Opening CV…",
         notFound: (c) => `command not found: ${c} — try 'help'`,
         historyEmpty: "history is empty",
         achTitle: (n, t) => `🏆 Achievements: ${n}/${t}`,
@@ -345,7 +345,7 @@
         termPrint(S("lsHint"), "t-muted");
       },
       contacts: () => {
-        termPrintNodes([txt("email:  "), makeLink("rodion.ch06@gmail.com", "mailto:rodion.ch06@gmail.com")]);
+        termPrintNodes([txt("email:  "), makeLink("rodion.chubarov@gmail.com", "mailto:rodion.chubarov@gmail.com")]);
         termPrintNodes([txt("tg:     "), makeLink("@rodion_dev", "https://t.me/rodion_dev")]);
         termPrintNodes([txt("github: "), makeLink("github.com/RoDioN124877", "https://github.com/RoDioN124877")]);
       },

@@ -61,7 +61,7 @@
             </div>
 
             <div class="header-actions">
-                <a class="btn-cv" href="resume.html" target="_blank">Резюме (PDF)</a>
+                <a class="btn-cv" href="resume-ru.pdf" download="Чубаров Родион - Fullstack-разработчик - Резюме.pdf">Резюме (PDF)</a>
             </div>
 
             <button class="burger" id="burgerBtn" aria-label="Меню" aria-expanded="false">
@@ -78,8 +78,9 @@
         <a href="#skills">Навыки</a>
         <a href="#contacts">Контакты</a>
         <br />
-        <a class="btn-cv" href="resume.html" target="_blank"
-            style="text-align:center;color:#000">Скачать Резюме</a>
+        <a href="resume.html" target="_blank">Смотреть резюме</a>
+        <a class="btn-cv" href="resume-ru.pdf" download="Чубаров Родион - Fullstack-разработчик - Резюме.pdf"
+            style="text-align:center;color:#000">Скачать резюме</a>
         <button id="langToggleMobile" class="lang-btn-mobile"><span class="lang-flag">🌐</span><span
                 class="lang-text-mobile">English</span></button>
     </nav>
@@ -99,14 +100,14 @@
                     </div>
 
                     <div class="contact-row">
-                        <a href="mailto:rodion.ch06@gmail.com" class="contact-pill">rodion.ch06@gmail.com</a>
+                        <a href="mailto:rodion.chubarov@gmail.com" class="contact-pill">rodion.chubarov@gmail.com</a>
                         <a href="tel:+77052940884" class="contact-pill">+7 705 294 0884</a>
                         <a href="https://github.com/RoDioN124877" target="_blank" class="contact-pill">GitHub</a>
                     </div>
 
                     <div class="meta">
                         <span>Астана, Казахстан</span>
-                        <span>English B1</span>
+                        <span>English B2</span>
                         <span>12.12.2006</span>
                     </div>
                 </div>
@@ -131,7 +132,7 @@
                 <article class="timeline-item" data-exp="qazirgi">
                     <div class="ti-left">
                         <h3>Qazirgi Management</h3>
-                        <time>Дек 2025 — настоящее время</time>
+                        <time>Дек 2025 — наст. время · удалённо</time>
                         <p class="role">Frontend Developer (React + TypeScript)</p>
                     </div>
                     <div class="ti-right">
@@ -157,7 +158,7 @@
                 <article class="timeline-item" data-exp="saqr">
                     <div class="ti-left">
                         <h3>Saqr Innovations Ltd.</h3>
-                        <time>Май 2026 — Июль 2026</time>
+                        <time>Май — Июль 2026 · офис, Астана (параллельно с Qazirgi)</time>
                         <p class="role">Software Engineer (Fullstack)</p>
                     </div>
                     <div class="ti-right">
@@ -176,73 +177,24 @@
                     </div>
                 </article>
 
-                <article class="timeline-item" data-exp="lst">
+                <article class="timeline-item" data-exp="freelance">
                     <div class="ti-left">
-                        <h3>LST</h3><time>Окт 2025 — Ноя 2025</time>
-                        <p class="role">Frontend Dev</p>
+                        <h3>Freelance</h3>
+                        <time>Ноя 2023 — Ноя 2025 · удалённо</time>
+                        <p class="role">Fullstack / Frontend Developer · фриланс/контракт</p>
                     </div>
                     <div class="ti-right">
                         <ul>
-                            <li>Разработал React-приложение с нуля: спроектировал компонентную архитектуру, структуру
-                                проекта и UI-логику.</li>
-                            <li>Использовал TypeScript для строгой типизации, повышения стабильности и удобства
-                                сопровождения кода.</li>
-                            <li>Реализовал интерактивную карусель и поисковой компонент с debounce/throttle.</li>
-                            <li>Внедрил SEO-улучшения и адаптивный интерфейс.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="timeline-item" data-exp="startup">
-                    <div class="ti-left">
-                        <h3>Стартап (Вендинг)</h3><time>Июн 2025 — Авг 2025</time>
-                        <p class="role">Frontend Dev</p>
-                    </div>
-                    <div class="ti-right">
-                        <ul>
-                            <li>Разработал frontend вендингового аппарата: полный сценарий «выбор товара — оплата —
-                                подтверждение».</li>
-                            <li>Интегрировал взаимодействие с backend и базой данных, реализовал админ-панель и
-                                стабильную работу интерфейса в реальном времени.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="timeline-item" data-exp="lifetrend">
-                    <div class="ti-left">
-                        <h3>Life trend</h3><time>Авг 2025</time>
-                    </div>
-                    <div class="ti-right">
-                        <ul>
-                            <li>Разработал адаптивный лендинг с нуля по макету Figma.</li>
-                            <li>Использовал BEM, SCSS-модули и гибкую сетку.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="timeline-item" data-exp="daft">
-                    <div class="ti-left">
-                        <h3>DaftParty</h3><time>Фев 2024 — Апр 2024</time>
-                    </div>
-                    <div class="ti-right">
-                        <ul>
-                            <li>С нуля спроектировал визуальный стиль и UI/UX: макеты в Figma, дизайн-система
-                                (кнопки, формы, карточки, модалки).</li>
-                            <li>Мигрировал проект с HTML5 на Vue 3, переписал 12+ компонентов на Composition API.</li>
-                            <li>Повысил производительность на +15% по Lighthouse, улучшил структуру и
-                                переиспользуемость кода.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="timeline-item" data-exp="verotour">
-                    <div class="ti-left">
-                        <h3>Verotour</h3><time>Ноя 2023 — Янв 2024</time>
-                    </div>
-                    <div class="ti-right">
-                        <ul>
-                            <li>Полностью разработал многостраничный сайт турагентства: дизайн, вёрстка, структура.</li>
-                            <li>Интегрировал внешние API для поиска туров и билетов.</li>
+                            <li>Verotour — разработал сайт турагентства с нуля: адаптивная вёрстка и интеграция
+                                внешних API поиска туров и билетов.</li>
+                            <li>DaftParty — мигрировал проект с HTML5 на Vue 3 (Composition API, 12+ компонентов),
+                                поднял Lighthouse на +15%.</li>
+                            <li>LST — собрал React SPA с нуля: компонентная архитектура, поиск с debounce/throttle,
+                                SEO-оптимизация.</li>
+                            <li>Вендинг-стартап — fullstack: сценарий «выбор товара → оплата → подтверждение»,
+                                интеграция с backend/БД, админ-панель.</li>
+                            <li>Life Trend — сверстал адаптивный лендинг по макету Figma (BEM, SCSS),
+                                кроссбраузерность на 5+ типах устройств.</li>
                         </ul>
                     </div>
                 </article>
@@ -408,7 +360,7 @@
                 <div class="skill-block">
                     <h5>Языки и базы данных</h5>
                     <div class="skill-tags">
-                        <span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>HTML5</span><span>CSS3 /
+                        <span>TypeScript</span><span>JavaScript</span><span>SQL</span><span>PostgreSQL</span><span>HTML5</span><span>CSS3 /
                             SASS</span>
                     </div>
                 </div>
@@ -422,13 +374,13 @@
                 <div class="skill-block">
                     <h5>Backend</h5>
                     <div class="skill-tags">
-                        <span>Node.js</span><span>NestJS</span><span>Redis</span><span>BullMQ</span><span>WebSocket</span>
+                        <span>Node.js</span><span>NestJS</span><span>REST API</span><span>TypeORM</span><span>JWT</span><span>Redis</span><span>BullMQ</span><span>WebSocket</span>
                     </div>
                 </div>
                 <div class="skill-block">
                     <h5>Инструменты и DevOps</h5>
                     <div class="skill-tags">
-                        <span>Git</span><span>Kubernetes</span><span>Figma</span><span>Vite</span><span>Webpack</span>
+                        <span>Git</span><span>Docker</span><span>Figma</span><span>Vite</span><span>Webpack</span>
                     </div>
                 </div>
             </div>
@@ -453,8 +405,8 @@
             <div class="contacts-card">
                 <div class="contacts-info">
                     <p><strong data-i18n="contacts.email">Email:</strong>
-                        <a class="c-link" href="mailto:rodion.ch06@gmail.com">rodion.ch06@gmail.com</a>
-                        <button id="copyEmailBtn" class="copy-btn" data-copy="rodion.ch06@gmail.com"
+                        <a class="c-link" href="mailto:rodion.chubarov@gmail.com">rodion.chubarov@gmail.com</a>
+                        <button id="copyEmailBtn" class="copy-btn" data-copy="rodion.chubarov@gmail.com"
                             title="Скопировать email" aria-label="Скопировать email">⧉</button>
                     </p>
                     <p><strong data-i18n="contacts.phone">Phone:</strong>
@@ -470,7 +422,7 @@
                 <div class="cta-row">
                     <a class="btn-cta primary" href="https://t.me/rodion_dev" target="_blank"
                         data-i18n="contacts.cta.telegram">Написать в Telegram</a>
-                    <a class="btn-cta ghost" href="mailto:rodion.ch06@gmail.com"
+                    <a class="btn-cta ghost" href="mailto:rodion.chubarov@gmail.com"
                         data-i18n="contacts.cta.email">Отправить email</a>
                 </div>
             </div>

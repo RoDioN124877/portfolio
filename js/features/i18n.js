@@ -27,15 +27,23 @@
 
       // mobile menu
       document.querySelectorAll("#mobileMenu a").forEach((link, idx) => {
-        const keys = ["nav.about","nav.experience","nav.works","nav.skills","nav.contacts","nav.downloadResume"];
+        // порядок должен совпадать с порядком <a> внутри #mobileMenu
+        const keys = ["nav.about","nav.experience","nav.works","nav.skills","nav.contacts","nav.viewResume","nav.downloadResume"];
         if (t[keys[idx]]) link.textContent = t[keys[idx]];
       });
 
-      // resume
-      const resumeBtn = document.querySelector(".btn-cv");
-      if (resumeBtn && (resumeBtn.textContent.includes("Резюме") || resumeBtn.textContent.includes("Resume"))) {
-        resumeBtn.textContent = t["nav.resume"];
-      }
+      // CV buttons: label + direct download of the market-correct PDF
+      // RU → рынок KZ/РФ («Резюме»), EN → Европа/удалёнка («CV»)
+      const cvFile = lang === "ru" ? "resume-ru.pdf" : "resume-en.pdf";
+      const cvName = lang === "ru"
+        ? "Чубаров Родион - Fullstack-разработчик - Резюме.pdf"
+        : "Rodion Chubarov - Fullstack Developer - CV.pdf";
+      document.querySelectorAll(".btn-cv").forEach(btn => {
+        btn.textContent = btn.closest("#mobileMenu") ? t["nav.downloadResume"] : t["nav.resume"];
+        btn.setAttribute("href", cvFile);
+        btn.setAttribute("download", cvName);
+        btn.removeAttribute("target");
+      });
 
       // hero
       const nameElement = document.querySelector(".name");

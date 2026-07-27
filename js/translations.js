@@ -6,7 +6,8 @@ const translations = {
     "nav.skills": "Навыки",
     "nav.contacts": "Контакты",
     "nav.resume": "Резюме (PDF)",
-    "nav.downloadResume": "Скачать Резюме",
+    "nav.viewResume": "Смотреть резюме",
+    "nav.downloadResume": "Скачать резюме",
 
     "hero.title": "Чубаров Родион",
     "hero.subtitle": "Fullstack Developer",
@@ -14,43 +15,26 @@ const translations = {
     "hero.tagline2": "React / TypeScript / Node.js / NestJS.",
     "hero.tagline3": "Люблю музыку и дисциплину спорта.",
     "hero.location": "Астана, Казахстан",
-    "hero.english": "English B1",
+    "hero.english": "English B2",
     "hero.birthdate": "12.12.2006",
 
     "about.title": "О себе",
-    "about.text": `<strong>Fullstack-разработчик:</strong> React / TypeScript на фронте,
-                Node.js / NestJS на бэке. Беру фичу на этапе идеи и довожу до production:
-                архитектура, дизайн, код, багфиксы, релиз.
+    "about.text": `<strong>Fullstack-разработчик</strong> с фокусом на React / TypeScript (frontend)
+                и Node.js / NestJS (backend), <strong>~2.5 года коммерческого опыта</strong>.
+                Веду фичи от архитектуры и дизайна до production: real-time на WebSocket, очереди,
+                фоновые задачи и транзакции на Redis / BullMQ, решение race conditions при
+                конкурентном доступе. Силён в диагностике — нахожу и чиню баги, которые
+                воспроизводятся только на конкретной платформе.
                 <br />
                 <br />
-                Цифры и факты вместо слов: <br />
-                • Ускорил загрузку страницы <strong>с ~15 до ~2 секунд (в ~7 раз)</strong>,
-                перестроив логику получения данных. <br />
-                • В одиночку провёл эпик учёта активов от проектирования
-                до production. <br />
-                • Чинил баги, которые воспроизводились только на одной платформе: потеря
-                сессии на iOS — локализовал через логирование и решил пробросом сессии
-                через backend. <br />
-                • Разработал 360°-viewer на WebGL / three.js и киоск-приложение на Kotlin
-                с авторизацией по Face ID. <br />
-                <br />
-                <strong>Backend:</strong> транзакции и фоновые задачи на Redis / BullMQ /
-                cron, SQL, real-time на WebSocket, решение race conditions при
-                конкурентном доступе.
-                <br />
-                <br />
-                <strong>Frontend:</strong> React, Next.js, Zustand, сложный интерактив
-                вплоть до WebGL. Могу сам отрисовать макеты в Figma и собрать
-                дизайн-систему — когда-то выбирал между дизайном и разработкой, в итоге
-                делаю и то, и другое.
-                <br />
-                <br />
-                В коде с 13 лет: начинал с 2D-игр и Arduino, участвовал в конкурсах и
-                побеждал. Легко общаюсь, быстро включаюсь в продукт и не боюсь чужого
-                legacy.`,
+                Ключевые достижения: ускорил загрузку страницы <strong>в ~7 раз (с ~15 до ~2
+                секунд)</strong>; в одиночку провёл <strong>эпик учёта активов</strong> от
+                проектирования до production (frontend + backend); диагностировал и починил
+                <strong>критический баг на iOS</strong>; разработал <strong>360°-viewer на
+                WebGL / three.js</strong>.`,
 
     "experience.title": "Опыт работы",
-    "experience.qazirgi.period": "Дек 2025 — настоящее время",
+    "experience.qazirgi.period": "Дек 2025 — наст. время · удалённо",
     "experience.qazirgi.role": "Frontend Developer (React + TypeScript)",
     "experience.qazirgi.items": [
       "Рефакторил legacy-фронтенд: выявлял и устранял баги, повышал стабильность и поддерживаемость кода.",
@@ -62,7 +46,7 @@ const translations = {
       "Ускорил загрузку страницы с ~15 до ~2 секунд, перестроив логику получения данных на высокоуровневый polling.",
       "Разработал киоск-приложение на Kotlin для авторизации гостей по Face ID.",
     ],
-    "experience.saqr.period": "Май 2026 — Июль 2026",
+    "experience.saqr.period": "Май — Июль 2026 · офис, Астана (параллельно с Qazirgi)",
     "experience.saqr.role": "Software Engineer (Fullstack)",
     "experience.saqr.items": [
       "Вёл эпик учёта активов с нуля до production: спроектировал и реализовал функциональность целиком (frontend + backend), провёл через множество итераций багфиксов.",
@@ -72,46 +56,14 @@ const translations = {
       "Провёл редизайн интерфейса и принимал UI/UX-решения, улучшившие ключевые пользовательские сценарии.",
       "Стек: TypeScript, NestJS, Node.js, SQL, Redis, BullMQ, React.",
     ],
-    "experience.lst.period": "Окт 2025 — Ноя 2025",
-    "experience.lst.role": "Frontend Dev",
-    "experience.lst.items": [
-      "Разработал React-приложение с нуля: спроектировал компонентную архитектуру, структуру проекта и UI-логику.",
-      "Использовал TypeScript для строгой типизации, повышения стабильности и удобства сопровождения кода.",
-      "Реализовал интерактивную карусель и мощный поисковой компонент с debounce/throttle для оптимизации запросов.",
-      "Внедрил SEO-улучшения: оптимизировал DOM-структуру, метатеги, микроразметку, что улучшило индексируемость.",
-      "Создал простую JSON-базу данных и полностью реализовал логику взаимодействия с ней.",
-      "Разработал адаптивный интерфейс для всех основных устройств.",
-      "Выполнил весь проект самостоятельно: дизайн, архитектура, логика, интеграции и финальный релиз.",
-    ],
-
-    "experience.startup.period": "Июн 2025 — Авг 2025",
-    "experience.startup.role": "Frontend Dev (React)",
-    "experience.startup.items": [
-      "Разработал frontend вендингового аппарата: полный сценарий «выбор товара — оплата — подтверждение».",
-      "Интегрировал взаимодействие с backend и базой данных, реализовал админ-панель и стабильную работу интерфейса в реальном времени.",
-    ],
-
-    "experience.lifetrend.period": "Авг 2025",
-    "experience.lifetrend.items": [
-      "Разработал адаптивный лендинг с нуля по макету Figma.",
-      "Использовал BEM, SCSS-модули и гибкую сетку для корректного отображения на 5+ типах устройств.",
-      "Реализовал анимации интерфейса, улучшив визуальное восприятие и вовлечённость.",
-      "Проект выполнял самостоятельно: от структуры до финальной оптимизации.",
-    ],
-
-    "experience.daft.period": "Фев 2024 — Апр 2024",
-    "experience.daft.items": [
-      "С нуля спроектировал визуальный стиль и UI/UX: макеты в Figma, дизайн-система (кнопки, формы, карточки, модалки).",
-      "Мигрировал проект с HTML5 на Vue 3, переписал 12+ компонентов на Composition API.",
-      "Повысил производительность на +15% по Lighthouse, улучшил структуру и переиспользуемость кода.",
-    ],
-
-    "experience.verotour.period": "Ноя 2023 — Янв 2024",
-    "experience.verotour.items": [
-      "Полностью разработал многостраничный сайт турагентства: дизайн, вёрстка, структура, UI-логика.",
-      "Реализовал интеграцию внешних API для поиска туров, авиабилетов и спец-предложений.",
-      "Создал несколько разделов: страны, акции, туры, покупка билетов и др.",
-      "Рабочий процесс включал самостоятельный дизайн и реализацию с нуля — опыт, который сильно прокачал навыки.",
+    "experience.freelance.period": "Ноя 2023 — Ноя 2025 · удалённо",
+    "experience.freelance.role": "Fullstack / Frontend Developer · фриланс/контракт",
+    "experience.freelance.items": [
+      "Verotour — разработал сайт турагентства с нуля: адаптивная вёрстка и интеграция внешних API поиска туров и билетов.",
+      "DaftParty — мигрировал проект с HTML5 на Vue 3 (Composition API, 12+ компонентов), поднял Lighthouse на +15%.",
+      "LST — собрал React SPA с нуля: компонентная архитектура, поиск с debounce/throttle, SEO-оптимизация.",
+      "Вендинг-стартап — fullstack: сценарий «выбор товара → оплата → подтверждение», интеграция с backend/БД, админ-панель.",
+      "Life Trend — сверстал адаптивный лендинг по макету Figma (BEM, SCSS), кроссбраузерность на 5+ типах устройств.",
     ],
 
     "works.title": "Проекты",
@@ -207,8 +159,9 @@ const translations = {
     "nav.works": "Projects",
     "nav.skills": "Skills",
     "nav.contacts": "Contacts",
-    "nav.resume": "Resume (PDF)",
-    "nav.downloadResume": "Download Resume",
+    "nav.resume": "CV (PDF)",
+    "nav.viewResume": "View CV",
+    "nav.downloadResume": "Download CV",
 
     "hero.title": "Rodion Chubarov",
     "hero.subtitle": "Fullstack Developer",
@@ -216,40 +169,25 @@ const translations = {
     "hero.tagline2": "React / TypeScript / Node.js / NestJS.",
     "hero.tagline3": "Love music and sports discipline.",
     "hero.location": "Astana, Kazakhstan",
-    "hero.english": "English B1",
+    "hero.english": "English B2",
     "hero.birthdate": "12.12.2006",
 
     "about.title": "About Me",
-    "about.text": `<strong>Fullstack developer:</strong> React / TypeScript on the front,
-Node.js / NestJS on the back. I take a feature from idea to production: architecture,
-design, code, bugfixes, release.
+    "about.text": `<strong>Fullstack developer</strong> focused on React / TypeScript (frontend)
+and Node.js / NestJS (backend), with <strong>~2.5 years of commercial experience</strong>.
+I own features from architecture and design to production: real-time over WebSocket, queues,
+background jobs and transactions with Redis / BullMQ, and solving race conditions under
+concurrent access. I'm strong at diagnostics — I find and fix bugs that reproduce on one
+platform only.
 <br />
 <br />
-Numbers and facts instead of words: <br />
-• Cut page load time <strong>from ~15 to ~2 seconds (~7x)</strong> by restructuring
-the data fetching logic. <br />
-• Single-handedly drove an asset accounting epic from design to
-production. <br />
-• Fixed bugs that reproduced on one platform only: session loss on iOS — localized
-it through logging and solved it by passing the session through the backend. <br />
-• Built a 360° WebGL / three.js viewer and a Kotlin kiosk app with Face ID
-authorization. <br />
-<br />
-<strong>Backend:</strong> transactions and background jobs with Redis / BullMQ / cron,
-SQL, real-time with WebSocket, solving race conditions under concurrent access.
-<br />
-<br />
-<strong>Frontend:</strong> React, Next.js, Zustand, complex interactivity up to WebGL.
-I can design layouts in Figma and build a design system myself — I once had to choose
-between design and development, and ended up doing both.
-<br />
-<br />
-Coding since I was 13: started with 2D games and Arduino, competed and won contests.
-Easy to communicate with, quick to dive into a product, and not afraid of someone
-else's legacy code.`,
+Key achievements: cut page load time <strong>~7x (from ~15 to ~2 seconds)</strong>;
+single-handedly drove an <strong>asset-accounting epic</strong> from design to production
+(frontend + backend); diagnosed and fixed a <strong>critical iOS bug</strong>; built a
+<strong>360° WebGL / three.js viewer</strong>.`,
 
     "experience.title": "Work Experience",
-    "experience.qazirgi.period": "Dec 2025 — Present",
+    "experience.qazirgi.period": "Dec 2025 — Present · Remote",
     "experience.qazirgi.role": "Frontend Developer (React + TypeScript)",
     "experience.qazirgi.items": [
       "Refactored a legacy frontend: identified and fixed bugs, improved stability and maintainability.",
@@ -261,7 +199,7 @@ else's legacy code.`,
       "Cut page load time from ~15 to ~2 seconds by restructuring data fetching into high-level polling.",
       "Built a Kotlin kiosk app for guest authorization via Face ID.",
     ],
-    "experience.saqr.period": "May 2026 — Jul 2026",
+    "experience.saqr.period": "May — Jul 2026 · On-site, Astana (in parallel with Qazirgi)",
     "experience.saqr.role": "Software Engineer (Fullstack)",
     "experience.saqr.items": [
       "Owned an asset accounting epic from scratch to production: designed and implemented the entire feature (frontend + backend) through many iterations of bugfixes.",
@@ -271,46 +209,14 @@ else's legacy code.`,
       "Redesigned the UI and made UI/UX decisions that improved key user flows.",
       "Stack: TypeScript, NestJS, Node.js, SQL, Redis, BullMQ, React.",
     ],
-    "experience.lst.period": "Oct 2025 — Nov 2025",
-    "experience.lst.role": "Frontend Dev",
-    "experience.lst.items": [
-      "Developed a React application from scratch: designed component architecture, project structure and UI logic.",
-      "Used TypeScript for strict typing, improving code stability and maintainability.",
-      "Implemented interactive carousel and powerful search component with debounce/throttle for request optimization.",
-      "Implemented SEO improvements: optimized DOM structure, meta tags, microdata, which improved indexability.",
-      "Created a simple JSON database and fully implemented interaction logic with it.",
-      "Developed responsive interface for all major devices.",
-      "Completed the entire project independently: design, architecture, logic, integrations and final release.",
-    ],
-
-    "experience.startup.period": "Jun 2025 — Aug 2025",
-    "experience.startup.role": "Frontend Dev (React)",
-    "experience.startup.items": [
-      "Developed the frontend for a vending machine: full flow of product selection — payment — confirmation.",
-      "Integrated with the backend and database, implemented an admin panel and stable real-time interface operation.",
-    ],
-
-    "experience.lifetrend.period": "Aug 2025",
-    "experience.lifetrend.items": [
-      "Developed a responsive landing page from scratch using Figma design.",
-      "Used BEM, SCSS modules and flexible grid for correct display on 5+ device types.",
-      "Implemented interface animations, improving visual perception and engagement.",
-      "Completed the project independently: from structure to final optimization.",
-    ],
-
-    "experience.daft.period": "Feb 2024 — Apr 2024",
-    "experience.daft.items": [
-      "Designed the visual style and UI/UX from scratch: Figma layouts, a design system (buttons, forms, cards, modals).",
-      "Migrated the project from HTML5 to Vue 3, rewrote 12+ components to Composition API.",
-      "Improved performance by +15% in Lighthouse, improved code structure and reusability.",
-    ],
-
-    "experience.verotour.period": "Nov 2023 — Jan 2024",
-    "experience.verotour.items": [
-      "Completely developed a multi-page travel agency website: design, layout, structure, UI logic.",
-      "Implemented integration of external APIs for searching tours, flights and special offers.",
-      "Created several sections: countries, promotions, tours, ticket purchase, etc.",
-      "The workflow included independent design and implementation from scratch - experience that greatly improved skills.",
+    "experience.freelance.period": "Nov 2023 — Nov 2025 · Remote",
+    "experience.freelance.role": "Fullstack / Frontend Developer · freelance/contract",
+    "experience.freelance.items": [
+      "Verotour — built a travel-agency website from scratch: responsive markup and integration of external tour/ticket search APIs.",
+      "DaftParty — migrated the project from HTML5 to Vue 3 (Composition API, 12+ components), raised Lighthouse by +15%.",
+      "LST — built a React SPA from scratch: component architecture, search with debounce/throttle, SEO optimization.",
+      "Vending startup — fullstack: “select → pay → confirm” flow, backend/DB integration, admin panel.",
+      "Life Trend — built a responsive landing from a Figma design (BEM, SCSS), cross-browser on 5+ device types.",
     ],
 
     "works.title": "Projects",
